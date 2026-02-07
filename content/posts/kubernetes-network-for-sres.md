@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes Network for SREs"
 date: 2026-02-07
-tags: ["kubernetes", "network", "CNI", "calico", "cilium", "networkpolicy", "sre"]
+tags: ["kubernetes", "networking", "CNI", "calico", "cilium", "networkpolicy", "sre"]
 ---
 
 ## Why this matters
