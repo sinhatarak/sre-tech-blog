@@ -14,4 +14,23 @@
 &lt;h2 id="debugging-checklist"&gt;Debugging checklist&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl describe networkpolicy
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl exec -it busybox -- wget &amp;lt;service&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Kubernetes Networking for SREs</title><link>https://sinhatarak.github.io/sre-tech-blog/posts/kubernetes-networking-for-sres/</link><pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><guid>https://sinhatarak.github.io/sre-tech-blog/posts/kubernetes-networking-for-sres/</guid><description>&lt;h2 id="why-kubernetes-networking-matters-for-sres"&gt;Why Kubernetes Networking Matters for SREs&lt;/h2&gt;
+&lt;p&gt;Most production outages in Kubernetes are not caused by code —
+they are caused by &lt;strong&gt;network assumptions&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This post covers:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pod-to-Pod networking fundamentals&lt;/li&gt;
+&lt;li&gt;Service networking &amp;amp; kube-proxy&lt;/li&gt;
+&lt;li&gt;CNI plugins (Calico vs Cilium)&lt;/li&gt;
+&lt;li&gt;NetworkPolicies in real production&lt;/li&gt;
+&lt;li&gt;Common outage patterns SREs see&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="pod-to-pod-networking"&gt;Pod-to-Pod Networking&lt;/h2&gt;
+&lt;p&gt;Every pod receives its own IP address.
+Kubernetes assumes &lt;strong&gt;flat networking&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No NAT between pods&lt;/li&gt;
+&lt;li&gt;Direct reachability across nodes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is implemented by the CNI plugin.&lt;/p&gt;</description></item></channel></rss>
