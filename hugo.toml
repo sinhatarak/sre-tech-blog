@@ -1,4 +1,6 @@
 baseURL = "https://www.sreops.co/"
+relativeURLs = true
+canonifyURLs = true
 languageCode = "en-us"
 title = "SRE Ops"
 theme = "PaperMod"
