@@ -1,4 +1,6 @@
-baseURL = "https://sinhatarak.github.io/sre-tech-blog/"
+#baseURL = "https://sinhatarak.github.io/sre-tech-blog/"
+baseURL = "https://www.sreops.co/"
+
 languageCode = "en-us"
 title = "SRE Ops"
 theme = "PaperMod"
