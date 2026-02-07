@@ -1,5 +1,4 @@
-name: Deploy Hugo site to GitHub Pages
-
+name: Deploy SREOPS GitHub Pages
 on:
   push:
     branches:
