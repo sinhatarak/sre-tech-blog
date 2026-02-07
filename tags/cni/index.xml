@@ -1,35 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>CNI on SRE Ops</title>
-    <link>http://localhost:1313/tags/cni/</link>
-    <description>Recent content in CNI on SRE Ops</description>
-    <generator>Hugo -- 0.155.2</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cni/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Kubernetes Network for SREs</title>
-      <link>http://localhost:1313/posts/kubernetes-network-for-sres/</link>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/kubernetes-network-for-sres/</guid>
-      <description>&lt;h2 id=&#34;why-this-matters&#34;&gt;Why this matters&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>CNI on SRE Ops</title><link>https://sinhatarak.github.io/sre-tech-blog/tags/cni/</link><description>Recent content in CNI on SRE Ops</description><generator>Hugo -- 0.155.2</generator><language>en-us</language><lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://sinhatarak.github.io/sre-tech-blog/tags/cni/index.xml" rel="self" type="application/rss+xml"/><item><title>Kubernetes Network for SREs</title><link>https://sinhatarak.github.io/sre-tech-blog/posts/kubernetes-network-for-sres/</link><pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><guid>https://sinhatarak.github.io/sre-tech-blog/posts/kubernetes-network-for-sres/</guid><description>&lt;h2 id="why-this-matters"&gt;Why this matters&lt;/h2&gt;
 &lt;p&gt;In production Kubernetes clusters, unrestricted pod-to-pod traffic increases blast radius.&lt;/p&gt;
-&lt;h2 id=&#34;how-networkpolicy-works&#34;&gt;How NetworkPolicy works&lt;/h2&gt;
+&lt;h2 id="how-networkpolicy-works"&gt;How NetworkPolicy works&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Enforced by CNI&lt;/li&gt;
 &lt;li&gt;Namespace &amp;amp; Pod selectors&lt;/li&gt;
 &lt;li&gt;Default allow vs default deny&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;common-sre-mistakes&#34;&gt;Common SRE mistakes&lt;/h2&gt;
+&lt;h2 id="common-sre-mistakes"&gt;Common SRE mistakes&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Assuming policies work without CNI support&lt;/li&gt;
 &lt;li&gt;Forgetting egress rules&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;debugging-checklist&#34;&gt;Debugging checklist&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kubectl describe networkpolicy
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kubectl exec -it busybox -- wget &amp;lt;service&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;h2 id="debugging-checklist"&gt;Debugging checklist&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl describe networkpolicy
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl exec -it busybox -- wget &amp;lt;service&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>
