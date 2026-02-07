@@ -1,19 +1,26 @@
-baseURL = "https://www.sreops.co/"
-relativeURLs = true
-canonifyURLs = true
+baseURL = "https://sinhatarak.github.io/sre-tech-blog/"
 languageCode = "en-us"
 title = "SRE Ops"
 theme = "PaperMod"
 
 enableRobotsTXT = true
 
+relativeURLs = true
+canonifyURLs = true
+
 [params]
   author = "Tarak Sinha"
-  description = "SRE, Kubernetes, Site Reliability Engineering, Systems Engineering & Production Learnings"
+  description = "SRE | Kubernetes | Site Reliability Engineering"
   ShowReadingTime = true
   ShowCodeCopyButtons = true
   ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowShareButtons = true
   defaultTheme = "auto"
+
+  [params.homeInfoParams]
+    Title = "SRE Ops"
+    Content = "Practical SRE, Kubernetes, Production & Reliability Learnings"
 
 [menu]
   [[menu.main]]
@@ -22,7 +29,12 @@ enableRobotsTXT = true
     weight = 1
 
   [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 2
+    weight = 3
 
