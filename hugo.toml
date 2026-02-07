@@ -4,23 +4,28 @@ title = "SRE Ops"
 theme = "PaperMod"
 
 enableRobotsTXT = true
-
 relativeURLs = true
 canonifyURLs = true
 
 [params]
   author = "Tarak Sinha"
-  description = "SRE | Kubernetes | Site Reliability Engineering"
+  description = "Practical SRE, Kubernetes, Production & Reliability Learnings"
+
+  defaultTheme = "auto"
   ShowReadingTime = true
   ShowCodeCopyButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowShareButtons = true
-  defaultTheme = "auto"
+  ShowToc = true
 
   [params.homeInfoParams]
     Title = "SRE Ops"
-    Content = "Practical SRE, Kubernetes, Production & Reliability Learnings"
+    Content = """
+SRE • Kubernetes • Reliability • Production Engineering
+
+Real-world learnings from running systems at scale.
+"""
 
 [menu]
   [[menu.main]]
